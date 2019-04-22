@@ -15,7 +15,7 @@ pipeline {
         stage("Upload"){
             when { branch "master" } 
             steps {
-                sh 'make deploy'
+                echo 'WILL RUN make deploy'
             }
         }
         stage("Deploy"){
